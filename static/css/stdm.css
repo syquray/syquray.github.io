@@ -1,0 +1,35 @@
+#namelg {
+    stroke: none;
+    fill: none;
+}
+
+#namelg.done {
+    stroke: #333;
+    stroke-width: 3px;
+    fill: #333;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: nameanime 3s linear;
+}
+
+#namelgarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes nameanime {
+    0% {
+        stroke-dashoffset: 500;
+        fill: transparent;
+    }
+
+    50% {
+        fill: transparent;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: #333;
+    }
+}
